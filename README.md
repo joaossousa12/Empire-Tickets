@@ -17,3 +17,9 @@ In the log-in if you don't want to create a new account log-in to one of these:
     2suns@gmail.com:D3sertPlanet (client by default)
     cody@gmail.com:3mpireOfficer (agent by default)
     shiv@gmail.com:th3Senate (admin)
+
+## Contributors
+
+<a href="https://github.com/joaossousa12/"> João Sousa </a>
+
+<a href="https://github.com/pedromagalhaes0"> Pedro Magalhães </a>
