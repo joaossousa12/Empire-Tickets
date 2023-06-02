@@ -9,3 +9,11 @@ roles, switch between an admin view and agent view, create new departments/hasht
 To create the database, we need to run the following command:
 
     sqlite3 database.db < database.sql
+
+## Accounts to test website
+
+In the log-in if you don't want to create a new account log-in to one of these:
+
+    2suns@gmail.com:D3sertPlanet (client by default)
+    cody@gmail.com:3mpireOfficer (agent by default)
+    shiv@gmail.com:th3Senate (admin)
