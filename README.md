@@ -10,6 +10,14 @@ To create the database, we need to run the following command:
 
     sqlite3 database.db < database.sql
 
+## Open on browser
+
+Go to the Empire Tickets directory on your machine, open the terminal and type:
+
+    php -S localhost:9000
+
+Go to your browser and type on the address bar localhost:9000 and you will be directed to Empire Tickets main page.
+
 ## Accounts to test website
 
 In the log-in if you don't want to create a new account log-in to one of these:
