@@ -1,0 +1,299 @@
+html{
+    font-family: 'Dela Gothic One', cursive;
+    background: url("../docs/background_space1.jpg")  no-repeat center center fixed;
+    background-color: #ffffff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0em;
+}
+
+/*login and register pages*/
+
+body.login, body.register{
+    color: #f2f2f2;
+    width: 30rem;
+    margin: auto;
+    padding-top: 5rem;
+}
+
+header>h1{
+    text-align:center;
+}
+
+header>p{
+    text-align: center;
+}
+
+header>img{
+    display: block;
+    margin: auto;
+    width: 20rem;
+    border-radius: 50%;
+
+}
+
+form.login, form.register, form.logout{
+    display: flex;
+    flex-direction: column;
+}
+
+.login>input, .register>input{
+    font-family: inherit;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 18px;
+}
+
+.login>a, .register>a, .logout>a{
+    text-align: center;
+    text-decoration: none;
+    color: #f2f2f2;
+    transition: 0.4s ease;
+    border-radius: 18px;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+.login>a:hover, .register>a:hover, .logout>a:hover{
+    background-color: red;
+    color: white;
+}
+
+.login>button, .register>button, .logout>button{
+    font-family: inherit;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 18px;
+    transition: 0.4s ease;
+}
+
+.login>button:hover, .register>button:hover, .logout>button:hover{
+    background-color: black;
+    color: white;
+}
+
+footer{
+    color: #f2f2f2;
+    position: fixed;
+    bottom: 0em;
+}
+
+
+/* profile page*/
+
+body.profile{
+    margin: 0;
+}
+
+h2.profile{
+    position: fixed;
+    top: 0em;
+    width: 100vw;
+    background: #f2f2f2;
+    padding: 10px;
+    border-style: groove;
+    border-color: black;
+    border-top: 0em;
+    border-left: 0em;
+    border-right: 0em;
+    border-width: 10px;
+    margin-top: 0em;    
+}
+
+img#home{
+    z-index: 2;
+    position: fixed;
+    right: 2rem;
+    top: 10px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+div.profile{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+img.profile{
+    object-fit: cover;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    padding: 10px;
+    background: #ffffff;
+    margin: 1rem;
+}
+
+form.profile{
+    padding: 2rem;
+    margin: 2rem;
+    background: #cccccc;
+    border-radius: 18px;
+    display:grid;
+    grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 1fr;
+}
+
+form > h3{
+    margin-top: 0;
+}
+
+input.profile{
+    font-family: inherit;
+    border-radius: 18px;
+    font-size:large;
+    padding: 5px;
+}
+
+button.profile{
+    font-family: inherit;
+    border-radius: 18px;
+    transition: 0.4s ease;
+    font-size:large;
+    padding: 5px;
+    background: #f2f2f2;
+}
+
+button.profile:hover{
+    background-color: black;
+    color: #f2f2f2;
+}
+
+article.warning{
+    color: #f2f2f2;
+}
+
+/* faqs page*/
+
+
+
+.faqs{
+    width: 90%; 
+    margin: auto;
+}
+
+
+header.faqs{
+    color: #f2f2f2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+
+header.faqs img#home{
+    top: 1.5rem;
+}
+
+
+
+article.faq{
+    margin: 1em;
+    padding: 1em;
+    border-radius: 18px;
+    background: #23395d;
+    color: #f2f2f2;
+    transition: 0.2s ease-in-out;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 1fr  auto auto;
+    
+}
+
+article.faq:hover{  
+    transform: scale(1.1);
+}
+
+p.question{
+    grid-area: 1 / 1 / 2 / 4; 
+}
+
+span.answer{
+    display: none;
+  }
+  
+span{
+    display: inline;
+    grid-area: 2 / 1 / 3 / 6; 
+}
+
+span.editing{
+    border-style: solid;
+    border-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input.faqShow{
+    grid-area: 1 / 4 / 2 / 5;
+    height: 3rem;
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input.faqEdit{
+    grid-area: 1 / 5 / 2 / 6;
+    padding: 10px;
+    font-family: inherit;
+    height: 3rem;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+input.editFaq{
+    display: none;
+}
+
+input{
+    display: inline;
+}
+
+input.edit{
+    display: none;
+}
+
+input.edit.editing{
+    display: inline;
+    grid-area: 3 / 1 / 3 / 1;
+    width: fit-content;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+footer>a{
+    text-decoration: none;
+    color: #f2f2f2;
+    position: fixed;
+    right: 0em;
+    bottom: 0em;
+    padding: 1rem;
+    transition: ease 0.2s;
+}
+
+footer>a:hover{
+    transform: scale(1.5);
+}
+  
+  
+@media (max-width: 60em){
+    body{
+        max-width:100vw;
+    } 
+
+    div.profile{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
